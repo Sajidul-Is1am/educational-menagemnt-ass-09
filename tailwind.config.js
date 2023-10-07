@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        urbanist:"'Urbanist', sans-serif"
+      },
+      colors:{
+        secondary:"#F57005",
+        primary:"#4F5DE4"
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
