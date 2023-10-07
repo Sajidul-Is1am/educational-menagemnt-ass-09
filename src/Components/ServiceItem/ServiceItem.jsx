@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types';
 const ServiceItem = ({ serviceItem }) => {
+    const {image,description,price,title} = serviceItem
     return (
         <div className='flex justify-center'>
-            <div className="card w-96 glass">
-                <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!" /></figure>
+            <div className="card glass">
+                <figure><img className='h-[300px] w-full' src={image} alt="car!" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Life hack</h2>
-                    <p>How to park your car at your garage?</p>
+                    <h2 className="card-title">{title}</h2>
+                    <span className='text-primary font-bold'>Price : {price}</span>
+                    <p>{description.slice(0,200)}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Learn now!</button>
+                        <button className="btn  bg-primary text-white">Details</button>
                     </div>
                 </div>
             </div>

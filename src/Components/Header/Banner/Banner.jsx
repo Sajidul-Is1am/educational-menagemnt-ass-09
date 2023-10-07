@@ -10,7 +10,7 @@ const Banner = () => {
                 <p className='text-white max-w-lg text-base font-medium leading-relaxed my-6'>We are providing you the best tutor to enhance your knowledge and skill. Lets get started and get a relaxing learning.</p>
                 <div className='flex gap-6 bannerBtn'>
                     <button className="btn btn-outline text-white  ">Take Now</button>
-                    <button className="btn btn-outline text-white  ">Find The Course</button>
+                    <button className="btn btn-outline text-white  ">Find The Services</button>
                   
                 </div>
             </div>
