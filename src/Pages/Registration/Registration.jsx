@@ -1,24 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Header/Navbar/Navbar";
 import { CreateProvider } from "../../AuthProvider/AuthProvider";
 import { useContext } from "react";
 import toast from "react-hot-toast";
 
 const Registration = () => {
+    const navigate = useNavigate()
 
     const { registrationEmailPass, profileUpdate } = useContext(CreateProvider);
     const passsowrdValidation = /(?=.*[A-Z])(?=.*[!@#$%^&*])/
 
-    // const passsowrdValidation = /[A-Z!@#$%^&*]/
     const handleRegistrar = e => {
 
         e.preventDefault()
         const form = new FormData(e.currentTarget)
-        const username = form.get('username')
-        const profile = form.get('profile')
+        const profilePicture = form.get('profile')
+        const userName = form.get('username')
         const email = form.get('email')
         const password = form.get('password')
-        console.log(username, profile);
+        console.log(userName,profilePicture);
+
 
         if (password.length < 6) {
             return toast.error('Password should be at least 6 characters!')
@@ -32,9 +33,10 @@ const Registration = () => {
 
         registrationEmailPass(email, password)
             .then(() => {
-                profileUpdate(username, profile)
+                profileUpdate(userName,profilePicture)
                     .then(() => {
                         toast.success('Successfully Registared!')
+                        navigate('/')
                     })
                 e.target.reset()
             })

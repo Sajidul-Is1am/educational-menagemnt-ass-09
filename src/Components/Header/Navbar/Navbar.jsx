@@ -7,6 +7,8 @@ import { CreateProvider } from '../../../AuthProvider/AuthProvider';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../../firebase/firebase.config';
 import toast from 'react-hot-toast';
+
+
 const Navbar = () => {
     const { user } = useContext(CreateProvider);
     console.log(user);
@@ -22,7 +24,7 @@ const Navbar = () => {
     const navLink = <>
         <li><NavLink to={'/'} className="flex items-center hover:text-secondary transition-all ">Home<BiChevronDown ></BiChevronDown></NavLink></li>
         <li><NavLink to={'/service'} className="flex items-center hover:text-secondary transition-all">Service<BiChevronDown></BiChevronDown></NavLink></li>
-        <li><NavLink to={'/teachers'} className="flex items-center hover:text-secondary transition-all">Teachers<BiChevronDown></BiChevronDown></NavLink></li>
+        <li><NavLink to={'/teachers'} className="flex items-center hover:text-secondary transition-all">Team<BiChevronDown></BiChevronDown></NavLink></li>
         <li><NavLink to={'/about'} className="flex items-center hover:text-secondary transition-all">About<BiChevronDown></BiChevronDown></NavLink></li>
     </>
 
@@ -51,13 +53,13 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <Link onClick={logout} to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Logout</Link> :
+                            <Link onClick={logout} to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Sing Out</Link> :
                             <Link to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Login</Link>
                     }
                     {
-                        user ? <div className='flex gap-3'>
-                            <img src={user.displayName} alt="" className='w-[30px] h-[30px] rounded-full' />
-                            <p>{user.photoURL}</p>
+                        user ? <div className='flex gap-3 items-center'>
+                            <img src={user?.photoURL} alt="" className='w-[40px] h-[40px] rounded-full' />
+                            <p className='text-base'>{user?.displayName}</p>
                         </div> : ''
                     }
                 </div>

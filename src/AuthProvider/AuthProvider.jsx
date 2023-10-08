@@ -7,13 +7,16 @@ export const CreateProvider = createContext(null)
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [loading,setLoading] = useState(true);
     // registration with email and password
     const registrationEmailPass = (email, password) => {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // registration with email and password
     const logInEmailPass = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
@@ -21,6 +24,7 @@ const AuthProvider = ({ children }) => {
     const provider = new GoogleAuthProvider();
 
     const googleRegister = () => {
+        setLoading(true)
         return signInWithPopup(auth, provider)
     }
 
@@ -30,13 +34,15 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            setLoading(false)
         })
     }, [])
 
     // update profile
-    const profileUpdate = (username,profile) => {
+    const profileUpdate = (userName,profilePicture) => {
+        setLoading(true)
         return updateProfile(auth.currentUser, {
-            displayName: username, photoURL: profile
+            displayName: userName, photoURL: profilePicture
         })
     }
 
@@ -49,6 +55,7 @@ const AuthProvider = ({ children }) => {
         logInEmailPass,
         googleRegister,
         profileUpdate,
+        loading,
         user
     }
 

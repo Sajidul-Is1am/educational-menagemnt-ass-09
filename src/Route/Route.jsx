@@ -5,30 +5,31 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import PrivetRoute from "./PrivetRoute";
 
 const Route = createBrowserRouter([
     {
-        path:'/',
-        element:<Root></Root>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children:[
+        path: '/',
+        element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
             {
-                path:'/',
-                loader:() => fetch('/service.json'),
-                element:<Home></Home>,
+                path: '/',
+                loader: () => fetch('/service.json'),
+                element: <Home></Home>,
             },
             {
-                path:'/login',
-                element:<Login></Login>
+                path: '/login',
+                element: <Login></Login>
             },
             {
-                path:'/registration',
-                element:<Registration></Registration>
+                path: '/registration',
+                element: <Registration></Registration>
             },
             {
-                path:'/details/:id',
-                loader:() => fetch('/service.json'),
-                element:<ServiceDetails></ServiceDetails>
+                path: '/details/:id',
+                loader: () => fetch('/service.json'),
+                element: <PrivetRoute><ServiceDetails></ServiceDetails></PrivetRoute>
             }
         ]
     }
