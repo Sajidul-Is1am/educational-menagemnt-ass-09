@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 const Registration = () => {
 
-    const { registrationEmailPass } = useContext(CreateProvider);
+    const { registrationEmailPass, profileUpdate } = useContext(CreateProvider);
     const passsowrdValidation = /(?=.*[A-Z])(?=.*[!@#$%^&*])/
 
     // const passsowrdValidation = /[A-Z!@#$%^&*]/
@@ -18,7 +18,7 @@ const Registration = () => {
         const profile = form.get('profile')
         const email = form.get('email')
         const password = form.get('password')
-        console.log(password);
+        console.log(username, profile);
 
         if (password.length < 6) {
             return toast.error('Password should be at least 6 characters!')
@@ -31,13 +31,18 @@ const Registration = () => {
         //    registration with email and passsword
 
         registrationEmailPass(email, password)
-            .then(resuls => {
-                toast.success('Successfully Registared!')
+            .then(() => {
+                profileUpdate(username, profile)
+                    .then(() => {
+                        toast.success('Successfully Registared!')
+                    })
                 e.target.reset()
             })
             .catch(error => {
                 toast.error(error.message)
             })
+
+
     }
 
 

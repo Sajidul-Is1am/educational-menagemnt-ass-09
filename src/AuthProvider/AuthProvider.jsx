@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { createContext, useEffect, useState } from 'react';
 import { auth } from '../firebase/firebase.config';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, updateProfile } from 'firebase/auth';
 
 export const CreateProvider = createContext(null)
 
@@ -33,12 +33,26 @@ const AuthProvider = ({ children }) => {
         })
     }, [])
 
+    // update profile
+    const profileUpdate = (username,profile) => {
+        return updateProfile(auth.currentUser, {
+            displayName: username, photoURL: profile
+        })
+    }
+
+
+
+    //  main provider obejct start here =============================
+
     const info = {
         registrationEmailPass,
         logInEmailPass,
         googleRegister,
+        profileUpdate,
         user
     }
+
+
 
 
     return (

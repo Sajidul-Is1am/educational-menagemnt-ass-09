@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 const ServiceItem = ({ serviceItem }) => {
-    const {name,image,price,short_description,button} = serviceItem
+    const {name,image,price,short_description,button,id} = serviceItem
     return (
         <div className='flex justify-center'>
             <div className="card glass">
@@ -11,7 +11,7 @@ const ServiceItem = ({ serviceItem }) => {
                     <span className='text-primary font-bold'>Price : {price}</span>
                     <p>{short_description}</p>
                     <div className="card-actions justify-end">
-                        <Link to={'/details'} className="btn  bg-primary text-white">{button}</Link>
+                        <Link to={`/details/${id}`} className="btn  bg-primary text-white">{button}</Link>
                     </div>
                 </div>
             </div>

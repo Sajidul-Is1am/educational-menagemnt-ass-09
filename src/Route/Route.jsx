@@ -26,7 +26,8 @@ const Route = createBrowserRouter([
                 element:<Registration></Registration>
             },
             {
-                path:'/details',
+                path:'/details/:id',
+                loader:() => fetch('/service.json'),
                 element:<ServiceDetails></ServiceDetails>
             }
         ]

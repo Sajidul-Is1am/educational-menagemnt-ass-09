@@ -9,15 +9,15 @@ import { auth } from '../../../firebase/firebase.config';
 import toast from 'react-hot-toast';
 const Navbar = () => {
     const { user } = useContext(CreateProvider);
-
-    const logout = () =>{
+    console.log(user);
+    const logout = () => {
         signOut(auth)
-        .then(resuls => {
-            toast.success('Successfully LogOut!')
-        })
-        .catch(error =>{
-            console.log(error.messsage);
-        }) 
+            .then(resuls => {
+                toast.success('Successfully LogOut!')
+            })
+            .catch(error => {
+                console.log(error.messsage);
+            })
     }
     const navLink = <>
         <li><NavLink to={'/'} className="flex items-center hover:text-secondary transition-all ">Home<BiChevronDown ></BiChevronDown></NavLink></li>
@@ -46,11 +46,19 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                <div className="font-semibold text-white text-lg">
+
+                <div className="font-semibold text-white text-lg flex items-center flex-row-reverse gap-6">
+
                     {
                         user ?
                             <Link onClick={logout} to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Logout</Link> :
                             <Link to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Login</Link>
+                    }
+                    {
+                        user ? <div className='flex gap-3'>
+                            <img src={user.displayName} alt="" className='w-[30px] h-[30px] rounded-full' />
+                            <p>{user.photoURL}</p>
+                        </div> : ''
                     }
                 </div>
             </div>
