@@ -4,7 +4,6 @@ import ServiceItem from "../ServiceItem/ServiceItem";
 const Service = () => {
 
     const services = useLoaderData()
-    console.log(services.length);
 
     return (
         <div id="service" className="md:mx-24">

@@ -1,85 +1,49 @@
  [{
-         "id": 1,
-         "title": "Full-Stack Web Development Bootcamp",
-         "price": "$999",
-         "description": "Our Full-Stack Web Development Bootcamp is an intensive 12-week program designed to turn beginners into proficient developers. You'll learn HTML, CSS, JavaScript, React, Node.js, and more. This course includes hands-on projects and lifetime access to course materials. Get ready to launch your web development career!",
-         "duration": "12 weeks",
-         "image": "https://i.ibb.co/px4RW7z/service1.webp",
-         "lessons": 60,
-         "language": "English",
-         "skill_level": "Intermediate",
-         "videos": 120,
-         "max_students": 50,
-         "total_reviews": 2
-     },
-     {
-         "id": 2,
-         "title": "Certified Ethical Hacker (CEH)",
-         "price": "$799",
-         "description": "Become a Certified Ethical Hacker (CEH) and learn how to protect against cyber threats. This 6-month course covers topics such as penetration testing, network security, and ethical hacking techniques. Gain practical experience with real-world hacking simulations and receive a CEH exam voucher.",
-         "duration": "6 months",
-         "image": "https://i.ibb.co/HXhssc5/service2.jpg",
-         "lessons": 45,
-         "language": "English",
-         "skill_level": "Advanced",
-         "videos": 90,
-         "max_students": 30,
-         "total_reviews": 2
-     },
-     {
-         "id": 3,
-         "title": "Data Science and Machine Learning Masterclass",
-         "price": "$1,299",
-         "description": "Join our Data Science and Machine Learning Masterclass and unlock the power of data. Over 16 weeks, you'll delve into Python, data analysis, deep learning, and more. Build a strong portfolio and receive personalized career coaching to kickstart your data science journey.",
-         "duration": "16 weeks",
-         "image": "https://i.ibb.co/tDbycgR/service3.jpg",
-         "lessons": 80,
-         "language": "English",
-         "skill_level": "Intermediate",
-         "videos": 150,
-         "max_students": 40,
-         "total_reviews": 2
-     },
-     {
-         "id": 4,
-         "title": "AWS Cloud Essentials Workshop",
-         "price": "$299",
-         "description": "Get hands-on with Amazon Web Services (AWS) in our 2-day Cloud Essentials Workshop. Learn to deploy and manage cloud resources, and receive free AWS credits for practice. Upon completion, you'll earn a course certificate.",
-         "duration": "2 days",
-         "image": "https://i.ibb.co/HXX4CGq/service4.jpg",
-         "lessons": 10,
-         "language": "English",
-         "skill_level": "Beginner",
-         "videos": 20,
-         "max_students": 20,
-         "total_reviews": 2
-     },
-     {
-         "id": 5,
-         "title": "iOS and Android App Development",
-         "price": "$699",
-         "description": "Master mobile app development for both iOS and Android platforms. In this 10-week course, you'll learn Swift, Kotlin, and app design principles. Gain access to a mobile app testing lab equipped with various devices.",
-         "duration": "10 weeks",
-         "image": "https://i.ibb.co/SrMNPrd/service5.jpg",
-         "lessons": 50,
-         "language": "English",
-         "skill_level": "Intermediate",
-         "videos": 100,
-         "max_students": 25,
-         "total_reviews": 2
-     },
-     {
-         "id": 6,
-         "title": "Certified DevOps Engineer",
-         "price": "$899",
-         "description": "Become a Certified DevOps Engineer and optimize software development and deployment processes. Over 8 months, you'll gain hands-on experience with popular DevOps tools. This course includes a DevOps certification exam.",
-         "duration": "8 months",
+        "id":1,
+         "name": "The Future of Online Learning",
          "image": "https://i.ibb.co/Wv5Fbf7/service6.jpg",
-         "lessons": 70,
-         "language": "English",
-         "skill_level": "Intermediate",
-         "videos": 130,
-         "max_students": 35,
-         "total_reviews": 2
+         "price": "$49.99",
+         "short_description": "Explore the evolving landscape of online education and its impact on traditional learning methods.",
+         "button": "Learn More"
+     },
+     {
+        "id":2,
+         "name": "Inclusive Education: Strategies for Success",
+         "image": "https://i.ibb.co/gww89wx/001.webp",
+         "price": "$59.99",
+         "short_description": "Discover effective strategies for creating inclusive learning environments and supporting diverse students.",
+         "button": "Learn More"
+     },
+     {
+        "id":3,
+         "name": "Education Technology and Its Impact",
+         "image": "https://i.ibb.co/RNNGQkL/002.jpg",
+         "price": "$49.99",
+         "short_description": "Examine the role of technology in education and how it's reshaping the classroom experience.",
+         "button": "Learn More"
+     },
+     {
+        "id":4,
+         "name": "Promoting STEM Education",
+         "image": "https://i.ibb.co/GsKW3Ym/003.webp",
+         "price": "$54.99",
+         "short_description": "Learn about the importance of STEM education and strategies for encouraging STEM learning.",
+         "button": "Learn More"
+     },
+     {
+        "id":5,
+         "name": "Global Perspectives in Education",
+         "image": "https://i.ibb.co/TBDTp21/004.jpg",
+         "price": "$59.99",
+         "short_description": "Gain insights into education from a global perspective, exploring diverse educational practices.",
+         "button": "Learn More"
+     },
+     {
+        "id":6,
+         "name": "Teacher Training and Development",
+         "image": "https://i.ibb.co/fnRY3k9/005.webp",
+         "price": "$49.99",
+         "short_description": "Enhance your teaching skills and professional development as an educator.",
+         "button": "Learn More"
      }
  ]

@@ -1,8 +1,24 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { BiChevronDown } from 'react-icons/bi';
 
 import logo from '../../../assets/logo/eduAct.png'
+import { useContext } from 'react';
+import { CreateProvider } from '../../../AuthProvider/AuthProvider';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../../firebase/firebase.config';
+import toast from 'react-hot-toast';
 const Navbar = () => {
+    const { user } = useContext(CreateProvider);
+
+    const logout = () =>{
+        signOut(auth)
+        .then(resuls => {
+            toast.success('Successfully LogOut!')
+        })
+        .catch(error =>{
+            console.log(error.messsage);
+        }) 
+    }
     const navLink = <>
         <li><NavLink to={'/'} className="flex items-center hover:text-secondary transition-all ">Home<BiChevronDown ></BiChevronDown></NavLink></li>
         <li><NavLink to={'/service'} className="flex items-center hover:text-secondary transition-all">Service<BiChevronDown></BiChevronDown></NavLink></li>
@@ -23,7 +39,7 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <a className=""><img src={logo} alt="" /></a>
+                    <a className="font-semibold text-white text-lg"><img src={logo} alt="" /></a>
                 </div>
                 <div className="hidden lg:flex">
                     <ul className="menu-horizontal px-1 flex gap-8 font-semibold text-white text-lg">
@@ -31,7 +47,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="font-semibold text-white text-lg">
-                    <a className="bg-secondary px-8 py-3 rounded-lg">Login</a>
+                    {
+                        user ?
+                            <Link onClick={logout} to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Logout</Link> :
+                            <Link to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Login</Link>
+                    }
                 </div>
             </div>
         </div>

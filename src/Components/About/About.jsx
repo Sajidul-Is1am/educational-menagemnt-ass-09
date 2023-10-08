@@ -22,7 +22,7 @@ const About = () => {
                     <div>
                         <img src={aboutleft2Img} alt="" className='rounded-[200px]' />
 
-                        <div className='flex bg-[#15A280] justify-center items-center rounded-xl my-3'>
+                        <div className='flex bg-[#15A280] justify-center items-center rounded-xl my-3 mt-6'>
                             <div className='p-4 bg-white rounded-full m-6 ml-0'>
                                 <FaAward className='text-3xl'></FaAward>
                             </div>
@@ -37,9 +37,7 @@ const About = () => {
                 <div>
                     <h5 className="text-xl text-primary font-semibold">About EduAct</h5>
                     <h2 className="text-6xl font-bold my-8 leading-snug">A New Different Way To Improve Your <span className="text-secondary">Skills.</span></h2>
-                    <p className='leading-loose'>Education is one of the most essential and valuable assets that an individual can possess. It plays a pivotal role in shaping the future of individuals, societies, and nations. The importance of education cannot be overstated, individuals development of nations.
-
-                        One of the primary benefits of education is its ability to empower individuals. Through education, individuals acquire knowledge, skills, and enable them to navigate the complexities of life.</p>
+                    <p className='leading-loose'>The International Education Summit 2023 is a premier gathering of educators, thought leaders, and experts from around the globe. We are dedicated to advancing education through innovation, inclusivity, and collaboration. Join us for three days of insightful discussions, workshops, and networking opportunities that will shape the future of learning.</p>
                     <hr className="my-6" />
 
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-6'>
@@ -47,10 +45,10 @@ const About = () => {
                             <div className='p-5 rounded-full bg-[#ffa60036] '><MdCastForEducation className='h-[30px] w-[30px] text-orange-600 '></MdCastForEducation> </div> <p className='text-xl font-medium'>1250+ Service</p>
                         </div>
                         <div className='flex items-center gap-6 '>
-                            <div className='p-5 rounded-full  bg-[#15a28137]'><GiTeacher className='h-[30px] w-[30px] text-[#15A280] '></GiTeacher> </div> <p className='text-xl font-medium'>250+ Mentors.</p>
+                            <div className='p-5 rounded-full  bg-[#15a28137]'><GiTeacher className='h-[30px] w-[30px] text-[#15A280] '></GiTeacher> </div> <p className='text-xl font-medium'>250+ Team Mambers.</p>
                         </div>
                         <div className='flex items-center gap-6 '>
-                            <div className='p-5 rounded-full bg-[#0000ff3f] '><ImManWoman className='h-[30px] w-[30px]  text-primary'></ImManWoman> </div> <p className='text-xl font-medium'>25k+ Students.</p>
+                            <div className='p-5 rounded-full bg-[#0000ff3f] '><ImManWoman className='h-[30px] w-[30px]  text-primary'></ImManWoman> </div> <p className='text-xl font-medium'>25k+ client.</p>
                         </div>
                         <div className='flex items-center gap-6 '>
                             <div className='p-5 rounded-full bg-[#8080804c] '><GrServices className='h-[30px] w-[30px] text-orange-600 '></GrServices> </div> <p className='text-xl font-medium'>24/7 hour Service.</p>

@@ -2,7 +2,7 @@
       {
         "id": 1,
         "name": "John Smith",
-        "expertise": "Full-Stack Developer",
+        "expertise": "Event Coordinator",
         "picture": "https://i.ibb.co/YT0nxgp/1.jpg",
         "facebook": "https://www.facebook.com/johnsmith",
         "twitter": "https://twitter.com/johnsmith",
@@ -11,7 +11,7 @@
       {
         "id": 2,
         "name": "Alice Johnson",
-        "expertise": "Cybersecurity Expert",
+        "expertise": "Workshop Facilitator",
         "picture": "https://i.ibb.co/NCH8gfK/2.jpg",
         "facebook": "https://www.facebook.com/alicejohnson",
         "twitter": "https://twitter.com/alicejohnson",
@@ -20,7 +20,7 @@
       {
         "id": 3,
         "name": "Emily Davis",
-        "expertise": "Data Scientist",
+        "expertise": "Keynote Speaker",
         "picture": "https://i.ibb.co/jhff6b6/3.jpg",
         "facebook": "https://www.facebook.com/emilydavis",
         "twitter": "https://twitter.com/emilydavis",
@@ -29,7 +29,7 @@
       {
         "id": 4,
         "name": "Michael Brown",
-        "expertise": "Cloud Solutions Architect",
+        "expertise": "Event Chair",
         "picture": "https://i.ibb.co/k917mCs/4.jpg",
         "facebook": "https://www.facebook.com/michaelbrown",
         "twitter": "https://twitter.com/michaelbrown",

@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
 
+
 const Root = () => {
     return (
         <div className="font-urbanist">
-            <Outlet></Outlet>            
+            <Outlet></Outlet>
         </div>
     );
 };
