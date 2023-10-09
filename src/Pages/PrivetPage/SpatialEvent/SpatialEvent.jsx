@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navbar from "../../../Components/Header/Navbar/Navbar";
 import EventItem from "../EventItem/EventItem";
 import Footer from "../../../Components/Footer/Footer";
 
@@ -15,8 +14,7 @@ const SpatialEvent = () => {
     },[])
     return (
         <div>
-            <div className="bg-gray-600 "><Navbar></Navbar></div>
-            <div className="md:mx-24 my-10">
+            <div className="lg:mx-24 md:mx-16 mx-10  my-10">
                 {
                     events.map(event => <EventItem key={event.id} event={event}></EventItem>)
                 }

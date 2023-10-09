@@ -1,7 +1,6 @@
 import About from "../../Components/About/About";
 import Footer from "../../Components/Footer/Footer";
 import Banner from "../../Components/Header/Banner/Banner";
-import Navbar from "../../Components/Header/Navbar/Navbar";
 import Service from "../../Components/Service/service";
 import Teachers from "../../Components/Teachers/Teachers";
 
@@ -9,7 +8,7 @@ const Home = () => {
     return (
         <div className="">
             <div className="bg-primary">
-                <Navbar className=""></Navbar>
+                {/* <Navbar className=""></Navbar> */}
                 <Banner></Banner>
             </div>
             <Service></Service>

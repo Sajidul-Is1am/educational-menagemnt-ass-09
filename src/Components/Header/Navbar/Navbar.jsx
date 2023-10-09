@@ -1,3 +1,4 @@
+import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom';
 import { BiChevronDown } from 'react-icons/bi';
 
@@ -36,7 +37,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='py-8'>
+        <div className='py-8 bg-primary'>
             <div className="flex justify-between items-center md:mx-24">
                 <div className="flex items-center">
                     <div className="dropdown">

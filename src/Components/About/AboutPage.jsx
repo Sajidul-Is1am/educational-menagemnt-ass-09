@@ -1,5 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { FaAward } from 'react-icons/fa';
 import { MdCastForEducation } from 'react-icons/md';
 import { GiTeacher } from 'react-icons/gi';
@@ -9,15 +7,9 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 import aboutleft1Img from '../../assets/about/img-1.jpg'
 import aboutleft2Img from '../../assets/about/img-2.jpg'
-import { useEffect } from 'react';
+import Footer from '../Footer/Footer';
 
-const About = () => {
-     // aos
-     useEffect(() =>{
-        AOS.init({
-            duration: 1500
-        });
-    },[])
+const AboutPage = () => {
     return (
         <div  >
            
@@ -31,15 +23,15 @@ const About = () => {
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-16">
                     {/* left about */}
                     <div className='grid md:grid-cols-2 gap-6'>
-                        <div className='col-span-1'  data-aos="fade-up"><img src={aboutleft1Img} alt="" className='rounded-[200px] ' /></div>
+                        <div className='col-span-1'><img src={aboutleft1Img} alt="" className='rounded-[200px] ' /></div>
                         <div className='md:col-span-1'>
-                            <img src={aboutleft2Img} alt="" className='rounded-[200px]'  data-aos="fade-up"/>
+                            <img src={aboutleft2Img} alt="" className='rounded-[200px]' />
 
                             <div className='flex bg-[#15A280] justify-center items-center rounded-xl my-3 mt-6'>
                                 <div className='p-4 bg-white rounded-full m-6 ml-0'>
                                     <FaAward className='text-3xl'></FaAward>
                                 </div>
-                                <div d data-aos="fade-up">
+                                <div>
                                     <span className='text-2xl font-bold text-white'>25+</span>
                                     <h4 className='text-xl font-bold text-white'>Years Of <span className=''>Experience</span></h4>
                                 </div>
@@ -55,17 +47,17 @@ const About = () => {
                         <hr className="my-6" />
 
                         <div className='grid md:grid-cols-2 grid-cols-1 gap-6'>
-                            <div className='flex items-center gap-6'  data-aos="fade-up">
+                            <div className='flex items-center gap-6'>
                                 <div className='p-5 rounded-full bg-[#ffa60036] '><MdCastForEducation className='h-[30px] w-[30px] text-orange-600 '></MdCastForEducation> </div> <p className='text-xl font-medium'>1250+ Service</p>
                             </div>
-                            <div className='flex items-center gap-6 '  data-aos="fade-up">
+                            <div className='flex items-center gap-6 '>
                                 <div className='p-5 rounded-full  bg-[#15a28137]'><GiTeacher className='h-[30px] w-[30px] text-[#15A280] '></GiTeacher> </div> <p className='text-xl font-medium'>250+ Team Mambers.</p>
                             </div>
                             <div className='flex items-center gap-6 '>
-                                <div className='p-5 rounded-full bg-[#0000ff3f] '   data-aos="fade-up"><ImManWoman className='h-[30px] w-[30px]  text-primary'></ImManWoman> </div> <p className='text-xl font-medium'>25k+ client.</p>
+                                <div className='p-5 rounded-full bg-[#0000ff3f] '><ImManWoman className='h-[30px] w-[30px]  text-primary'></ImManWoman> </div> <p className='text-xl font-medium'>25k+ client.</p>
                             </div>
                             <div className='flex items-center gap-6 '>
-                                <div className='p-5 rounded-full bg-[#8080804c] '   data-aos="fade-up"><GrServices className='h-[30px] w-[30px] text-orange-600 '></GrServices> </div> <p className='text-xl font-medium'>24/7 hour Service.</p>
+                                <div className='p-5 rounded-full bg-[#8080804c] '><GrServices className='h-[30px] w-[30px] text-orange-600 '></GrServices> </div> <p className='text-xl font-medium'>24/7 hour Service.</p>
                             </div>
                         </div>
                         <hr className="my-6" />
@@ -76,8 +68,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
 
-export default About;
+export default AboutPage;

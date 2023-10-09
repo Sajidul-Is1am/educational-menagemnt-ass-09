@@ -33,7 +33,7 @@ const Login = () => {
     const nagigate = useNavigate()
     const googleLogin = () =>{
         googleRegister()
-        .then(resuls =>{
+        .then(() =>{
             toast.success('Successfully Login!')
             nagigate('/')
             

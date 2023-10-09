@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 
 const EventItem = ({ event }) => {
     const { image_url, location, event_time, event_date, event_description, event_short_description, event_title ,event_highlights} = event
@@ -24,8 +24,8 @@ const EventItem = ({ event }) => {
                     </div>
                 </div>
             </div>
-            <div className="md:mb-20">
-                <h3 className="text-4xl font-bold mb-6">{event_title}</h3>
+            <div className="mb-20">
+                <h3 className="md:text-4xl text-2xl font-bold mb-6">{event_title}</h3>
                 <p className="leading-loose mb-6">{event_description}</p>
                 <h3 className="text-2xl font-bold mb-4">Event HighLight : </h3>
                 {
@@ -37,5 +37,9 @@ const EventItem = ({ event }) => {
         </div>
     );
 };
+
+EventItem.propTypes = {
+    event:PropTypes.object
+}
 
 export default EventItem;

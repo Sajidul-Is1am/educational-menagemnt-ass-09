@@ -8,7 +8,14 @@ import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivetRoute from "./PrivetRoute";
 import SpatialEvent from "../Pages/PrivetPage/SpatialEvent/SpatialEvent";
 import Vanue from "../Pages/PrivetPage/Vanue/Vanue";
+import Teachers from "../Components/Teachers/Teachers";
+import About from "../Components/About/About";
 import Service from "../Components/Service/service";
+import ServicePage from "../Components/Service/ServicePage";
+import TeachersPage from "../Components/Teachers/TeachersPage";
+import AboutPage from "../Components/About/AboutPage";
+
+
 
 const Route = createBrowserRouter([
     {
@@ -22,8 +29,17 @@ const Route = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
+                path:'/teachers',
+                element:<TeachersPage></TeachersPage>
+            },
+            {
                 path:'/service',
-                element:<Service></Service>
+                loader:() => fetch('/service.json'),
+                element:   <ServicePage></ServicePage>,         
+            },
+            {
+                path:'/about',
+                element:<AboutPage></AboutPage>
             },
             {
                 path: '/login',

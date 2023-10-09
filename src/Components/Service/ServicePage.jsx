@@ -3,7 +3,7 @@ import ServiceItem from "../ServiceItem/ServiceItem";
 import Footer from "../Footer/Footer";
 
 
-const Service = () => {
+const ServicePage = () => {
 
     const services = useLoaderData()
 
@@ -22,8 +22,9 @@ const Service = () => {
                     }
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
 
-export default Service;
+export default ServicePage;

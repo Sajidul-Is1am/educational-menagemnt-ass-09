@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Teacher from "../Teacher/Teacher";
-import Navbar from "../Header/Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
-const Teachers = () => {
+const TeachersPage = () => {
 
     // data load form json
     const [teachers, setTeachers] = useState([])
@@ -17,7 +16,7 @@ const Teachers = () => {
 
     return (
         <div>
-            <div className="lg:mx-24 md:mx-16 mx-10">
+            <div className="lg:mx-24 md:mx-16 mx-10 lg:mb-40">
                 {/* Teachers heading */}
                 <div className="my-16">
                     <h3 className="md:text-2xl text-xl font-bold text-center text-primary capitalize mb-2">Our Professionals</h3>
@@ -29,8 +28,9 @@ const Teachers = () => {
                     }
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
 
-export default Teachers;
+export default TeachersPage;
