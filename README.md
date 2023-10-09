@@ -1,6 +1,6 @@
 # React + Vite
 
-- [@vitejs/plugin-react-swc](https://educational-event-manage-d65dc.web.app) 
+- Live Link : [https://educational-event-manage-d65dc.web.app](https://educational-event-manage-d65dc.web.app) 
 
 
 
