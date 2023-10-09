@@ -1,0 +1,16 @@
+.vanueBg{
+    background: url(../../../assets/vanue/vanueBanner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0;
+}
+.vanuOverlay{
+    background-color: rgba(0, 0, 0, 0.493);
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+}

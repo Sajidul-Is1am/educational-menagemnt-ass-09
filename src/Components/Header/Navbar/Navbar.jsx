@@ -14,7 +14,7 @@ const Navbar = () => {
     console.log(user);
     const logout = () => {
         signOut(auth)
-            .then(resuls => {
+            .then(() => {
                 toast.success('Successfully LogOut!')
             })
             .catch(error => {
@@ -26,6 +26,12 @@ const Navbar = () => {
         <li><NavLink to={'/service'} className="flex items-center hover:text-secondary transition-all">Service<BiChevronDown></BiChevronDown></NavLink></li>
         <li><NavLink to={'/teachers'} className="flex items-center hover:text-secondary transition-all">Team<BiChevronDown></BiChevronDown></NavLink></li>
         <li><NavLink to={'/about'} className="flex items-center hover:text-secondary transition-all">About<BiChevronDown></BiChevronDown></NavLink></li>
+        {user &&
+            <div className='md:flex gap-8'>
+                <li><NavLink to={'/spatialevent'} className="flex items-center hover:text-secondary transition-all">Spacial Event<BiChevronDown></BiChevronDown></NavLink></li>
+                <li><NavLink to={'/vanue'} className="flex items-center hover:text-secondary transition-all">Vanue<BiChevronDown></BiChevronDown></NavLink></li>
+            </div>
+        }
     </>
 
 
@@ -37,7 +43,7 @@ const Navbar = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold text-white text-base">
+                        <ul tabIndex={0} className=" menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-gray-600 rounded-box w-40 font-semibold text-white text-base grid justify-center">
                             {navLink}
                         </ul>
                     </div>
@@ -53,7 +59,7 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <Link onClick={logout} to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Sing Out</Link> :
+                            <Link onClick={logout} to={'/login'} className="bg-secondary md:px-8 md:py-3 rounded-lg md:text-xl text-[12px]">Sing Out</Link> :
                             <Link to={'/login'} className="bg-secondary px-8 py-3 rounded-lg">Login</Link>
                     }
                     {

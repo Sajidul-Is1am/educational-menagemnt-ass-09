@@ -1,0 +1,84 @@
+[
+      {
+        "id": 1,
+        "event_title": "Keynote Address",
+        "event_short_description": "An inspiring talk by an education expert.",
+        "event_description": "Join us for an inspiring keynote address by a renowned education expert. Gain valuable insights into the future of education and learning. This keynote will explore the challenges and opportunities in education, focusing on innovative approaches to teaching and learning. Our speaker, Dr. Jane Smith, has decades of experience in the field and has worked on groundbreaking projects that have reshaped education worldwide. In this address, she will share her vision for the future, including the role of technology, inclusivity, and global collaboration. You won't want to miss this enlightening session that promises to leave you with a renewed passion for education and a wealth of ideas to implement in your own educational endeavors. ",
+        "event_date": "2023-11-15",
+        "event_time": "10:00 AM - 11:30 AM",
+        "location": "Main Auditorium",
+        "image_url": "https://i.ibb.co/CHNdTvq/pexels-photo-1763067.webp",
+        "event_highlights": [
+          "Renowned education expert as the keynote speaker",
+          "Exploration of innovative teaching and learning approaches",
+          "Discussion of the role of technology in education",
+          "Emphasis on inclusivity in education",
+          "Global collaboration in the education sector",
+          "Interactive Q&A session with the speaker",
+          "Inspiring insights into the future of education",
+          "Networking opportunities with fellow attendees"
+        ]
+      },
+      {
+        "id": 2,
+        "event_title": "Networking Lunch",
+        "event_short_description": "Connect with fellow attendees over lunch.",
+        "event_description": "Enjoy a delicious lunch and connect with fellow attendees. This is a great opportunity to build your professional network in the education sector. The networking lunch will be held in the elegant Grand Ballroom, providing a relaxed and welcoming atmosphere for conversations and connections. Whether you're a teacher, administrator, researcher, or edtech enthusiast, this is the perfect chance to exchange ideas, share experiences, and make valuable contacts. You'll leave with new friends and potential collaborators, making your conference experience even more rewarding.",
+        "event_date": "2023-11-15",
+        "event_time": "12:00 PM - 1:30 PM",
+        "location": "Grand Ballroom",
+        "image_url": "https://i.ibb.co/t81jb7m/pexels-photo-8349233.jpg",
+        "event_highlights": [
+          "Networking opportunity with attendees",
+          "Professional networking in the education sector",
+          "Conversations, idea exchange, and collaboration",
+          "Relaxed and welcoming atmosphere",
+          "Connecting with peers and potential collaborators",
+          "Enhancing the conference experience",
+          "Delicious lunch in the elegant Grand Ballroom",
+          "Opportunity to build lasting professional relationships"
+        ]
+      },
+      {
+        "id": 3,
+        "event_title": "Panel Discussion: Future Trends in Education",
+        "event_short_description": "Explore the future of education with experts.",
+        "event_description": "Join our panel of experts as they discuss the future of education. Gain insights into emerging trends, technologies, and strategies shaping the educational landscape. Our distinguished panelists, including Dr. John Doe, Dr. Mary Johnson, and Professor David Smith, will share their research and experiences on topics such as personalized learning, AI in education, and global education challenges. This interactive discussion invites your questions and encourages a lively exchange of ideas. Whether you're an educator",
+        "event_date": "2023-11-16",
+        "event_time": "2:00 PM - 3:30 PM",
+        "location": "Conference Room A",
+        "image_url": "https://i.ibb.co/rG0m1jQ/pexels-photo-2774556.webp",
+        "event_highlights": [
+          "Insights into emerging trends in education",
+          "Expert panelists including Dr. John Doe and Dr. Mary Johnson",
+          "Topics include personalized learning and AI in education",
+          "Discussion of global education challenges",
+          "Interactive session with audience questions",
+          "Valuable perspectives for educators, policymakers, and professionals",
+          "Exploration of the future of education",
+          "Engaging and thought-provoking discussion"
+        ]
+      },
+      {
+        "id": 4,
+        "event_title": "Gala Dinner and Awards Ceremony",
+        "event_short_description": "Celebrate excellence in education.",
+        "event_description": "Celebrate excellence in education at our gala dinner and awards ceremony. Join us for an evening of recognition, fine dining, and entertainment. We will honor educators, researchers, and institutions that have made significant contributions to the field of education. The gala dinner is a chance to unwind, socialize, and celebrate the achievements of the education community. Enjoy a gourmet three-course meal, live music, and the company of fellow conference attendees. This memorable evening promises to be a highlight of the conference, and it's an event you won't want to miss.",
+        "event_date": "2023-11-16",
+        "event_time": "7:00 PM - 10:00 PM",
+        "location": "Grand Ballroom",
+        "image_url": "https://i.ibb.co/v4PVC15/pexels-photo-5638732.jpg",
+        "event_highlights": [
+          "Recognition of excellence in education",
+          "Honoring educators, researchers, and institutions",
+          "Fine dining with a gourmet three-course meal",
+          "Live music and entertainment",
+          "Socializing with fellow conference attendees",
+          "Celebration of achievements in the education sector",
+          "Unwinding and relaxation",
+          "Memorable and highlight event of the conference"
+        ]
+      }
+    ]
+  
+  

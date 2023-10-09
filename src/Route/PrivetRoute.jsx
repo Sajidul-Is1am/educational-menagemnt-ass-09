@@ -8,7 +8,7 @@ const PrivetRoute = ({children}) => {
 
     
     if(loading){
-        return <span className="loading loading-dots loading-lg"></span>
+        return <div className='flex h-screen justify-center items-center'><span className="loading loading-dots loading-lg text-7xl text-center"></span></div>
     }
     if(!user){
         return <Navigate to={'/login'}></Navigate>
