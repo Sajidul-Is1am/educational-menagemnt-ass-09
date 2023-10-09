@@ -2,8 +2,8 @@ import logo from '../../assets/logo/eduAct.png'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 text-white bg-blue-950">
-                <aside>
+            <footer className="footer p-10 grid md:grid-cols-4 grid-cols-2 justify-between  text-white bg-blue-950">
+                <aside className='md:col-span-1 col-span-2'>
                     <img src={logo} alt="" />
                     <p>EduAct Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>

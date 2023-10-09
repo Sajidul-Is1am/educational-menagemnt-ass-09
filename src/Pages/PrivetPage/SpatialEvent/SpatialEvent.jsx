@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../../Components/Header/Navbar/Navbar";
 import EventItem from "../EventItem/EventItem";
+import Footer from "../../../Components/Footer/Footer";
 
 const SpatialEvent = () => {
 
@@ -19,7 +20,8 @@ const SpatialEvent = () => {
                 {
                     events.map(event => <EventItem key={event.id} event={event}></EventItem>)
                 }
-            </div>           
+            </div>   
+            <Footer></Footer>        
         </div>
     );
 };

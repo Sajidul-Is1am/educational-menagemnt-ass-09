@@ -20,7 +20,7 @@ const Vanue = () => {
     return (
 
         <div>
-            <div className='bg-gray-600 z-10'>
+            <div className='bg-gray-600'>
                 <Navbar></Navbar>
             </div>
             <div>
